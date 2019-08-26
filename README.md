@@ -10,7 +10,7 @@ This is a **Kotlin/Gradle** application, with basic unit tests, for which covera
 
 ## Configuration
 
-This project is written in `Kotlin 1.3` and is built using `Gradle 5.6`. Unit test are written using the `Spek` framework and coverge reports are generated using `Jacoco` plugin.
+This project is written in `Kotlin 1.3` and is built using `Gradle 5.6`. Unit test are written using the `Spek` framework and coverage reports are generated using `Jacoco` plugin.
 
 ## Usage
 
