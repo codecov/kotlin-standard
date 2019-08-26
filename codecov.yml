@@ -1,2 +1,2 @@
 ignore:
-  - "Request.kt"
+  - "src/main/kotlin/codecov/Request.kt"
