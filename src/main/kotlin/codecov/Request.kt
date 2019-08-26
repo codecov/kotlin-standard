@@ -12,8 +12,8 @@ object Request {
     fun main(args: Array<String>) {
         val url = "https://codecov.io/api/gh/codecov/Kotlin-Standard"
         val token = System.getenv("API_KEY")
-        // Sleep 2 minute    
-        Thread.sleep(120_000)
+        // Sleep 1 minute    
+        Thread.sleep(60_000)
         // Make request
         val response = khttp.get(
             url = url,
