@@ -21,7 +21,7 @@ repositories {
 }
 
 application {
-    mainClassName = "id.codecov.index"
+    mainClassName = "codecov.Request"
 }
 
 dependencies {
@@ -38,6 +38,8 @@ dependencies {
     testImplementation("org.spekframework.spek2:spek-dsl-jvm:$spekVersion")
     testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5:$spekVersion")
 	implementation("com.github.jkcclemens:khttp:0.1.0")
+    implementation("com.beust:klaxon:5.0.1")
+    compile("org.jetbrains.kotlin:kotlin-reflect:1.3.40")
 
 }
 
