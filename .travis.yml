@@ -3,5 +3,6 @@ before_install:
   - chmod +x gradlew
   - chmod +x gradle/wrapper/gradle-wrapper.jar
 script:
-  - ./gradlew test
+  - ./gradlew build
   - bash <(curl -s https://codecov.io/bash)
+  - ./gradlew run
