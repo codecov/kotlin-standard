@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/codecov/kotlin-Standard.svg?branch=master)](https://travis-ci.org/codecov/kotlin-Standard) [![codecov](https://codecov.io/gh/codecov/kotlin-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/kotlin-Standard)
 
-### Last Updated: 03/15/20 18:25:11
+### Last Updated: 03/16/20 18:25:58
 
 ## What is this?
 
