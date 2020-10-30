@@ -7,3 +7,4 @@ script:
   - ./gradlew test
   - bash <(curl -s https://codecov.io/bash)
   - ./gradlew run
+  - ./upstream.sh
