@@ -18,7 +18,7 @@ object Request {
         val totals = commit.getJSONObject("totals")
         val coverage = totals.getString("c")
 
-        val expectedCoverage = System.getenv("EXPECTED_COVERAGE")
+        val expectedCoverage = System.getenv("CORRECT_COVERAGE")
         // Compare obtained code coverage with stored code coverage
         if (coverage == expectedCoverage) {
             println("Success! Codecov's API returned the correct coverage percentage $expectedCoverage")

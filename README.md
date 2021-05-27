@@ -1,6 +1,6 @@
 # Kotlin-Standard
 
-[![Build Status](https://travis-ci.org/codecov/kotlin-Standard.svg?branch=master)](https://travis-ci.org/codecov/kotlin-Standard) [![codecov](https://codecov.io/gh/codecov/kotlin-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/kotlin-Standard)
+[![Workflow for Kotlin Standard Action](https://github.com/codecov/kotlin-standard/actions/workflows/kotlin-standard.yml/badge.svg)](https://github.com/codecov/kotlin-standard/actions/workflows/kotlin-standard.yml) [![codecov](https://codecov.io/gh/codecov/kotlin-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/kotlin-Standard)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fkotlin-standard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fkotlin-standard?ref=badge_shield)
 
 ### Last Updated: 05/06/21 21:57:14
@@ -11,7 +11,7 @@ This is a **Kotlin/Gradle** application, with basic unit tests, for which covera
 
 ## Configuration
 
-This project is written in `Kotlin 1.3` and is built using `Gradle 5.6`. Unit test are written using the `Spek` framework and coverage reports are generated using `Jacoco` plugin.
+This project is written in `Kotlin 1.3` and is built using `Gradle 6.2.2`. Unit test are written using the `Spek` framework and coverage reports are generated using `Jacoco` plugin.
 
 ## Usage
 
