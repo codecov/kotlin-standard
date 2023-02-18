@@ -3,7 +3,7 @@
 [![Workflow for Kotlin Standard Action](https://github.com/codecov/kotlin-standard/actions/workflows/kotlin-standard.yml/badge.svg)](https://github.com/codecov/kotlin-standard/actions/workflows/kotlin-standard.yml) [![codecov](https://codecov.io/gh/codecov/kotlin-Standard/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/kotlin-Standard)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fkotlin-standard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fkotlin-standard?ref=badge_shield)
 
-### Last Updated: 02/17/23 00:16:15
+### Last Updated: 02/18/23 00:14:58
 
 ## What is this?
 
