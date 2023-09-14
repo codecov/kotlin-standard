@@ -6,7 +6,7 @@ import os
 
 payload = {'token': os.environ['API_KEY']}
 
-link = 'https://api.codecov.io/api/v2/github/codecov/repos/Python-Standard/commits'
+link = 'https://api.codecov.io/api/v2/github/codecov/repos/kotlin-standard/commits'
 
 print("Waiting 60 seconds for report to upload before pinging API...")
 
