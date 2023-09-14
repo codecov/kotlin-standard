@@ -1,39 +1,34 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val kotlinVersion = "1.3.72"
-val jUnitVersion = "5.4.2"
-val kluentVersion = "1.51"
-val spekVersion = "2.0.5"
-val khttpVersion = "0.1.0"
-val klaxonVersion = "5.2"
-val jacocoVersion = "0.8.5"
-val gradleWrapperVersion = "6.3"
+val kotlinVersion = "1.8"
+val jUnitVersion = "5.10.0"
+val kluentVersion = "1.73"
+val spekVersion = "2.0.19"
+val khttpVersion = "1.3.2"
+val klaxonVersion = "5.5"
+val jacocoVersion = "0.8.10"
+val gradleWrapperVersion = "8.3"
 
 plugins {
     application
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.8.0"
     jacoco
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
-    maven("https://jitpack.io")
-    jcenter()
 }
 
 application {
-    mainClassName = "codecov.Request"
+    getMainClass().set("codecov.Request")
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    implementation("com.github.jkcclemens:khttp:$khttpVersion")
+    implementation("org.danilopianini:khttp:$khttpVersion")
     implementation("com.beust:klaxon:$klaxonVersion")
 
-    testImplementation(kotlin("test"))
     testImplementation(kotlin("test-junit"))
     testImplementation("org.junit.jupiter:junit-jupiter-api:$jUnitVersion")
     testImplementation("org.amshove.kluent:kluent:$kluentVersion")
@@ -46,11 +41,15 @@ jacoco {
     toolVersion = jacocoVersion
 }
 
+kotlin {
+    jvmToolchain(18)
+}
+
 tasks.jacocoTestReport {
     reports {
-        xml.isEnabled = true
-        csv.isEnabled = true
-        html.isEnabled = true
+        xml.required = true
+        csv.required = true
+        html.required = true
     }
 }
 
@@ -63,20 +62,6 @@ tasks.test {
     testLogging {
         exceptionFormat = TestExceptionFormat.FULL
         events("passed", "failed", "skipped")
-    }
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-        apiVersion = "1.3"
-        languageVersion = "1.3"
-        allWarningsAsErrors = true
     }
 }
 
